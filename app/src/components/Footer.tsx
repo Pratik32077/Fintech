@@ -119,8 +119,8 @@ const Footer = () => {
                 <Phone className="w-5 h-5 text-[#2C78B7] flex-shrink-0 mt-0.5" />
                 <div>
                   <p className="text-sm text-gray-400">Phone</p>
-                  <a href="tel:+918268101093" className="text-white hover:text-[#2C78B7] transition-colors">
-                    +91 82681 01093
+                  <a href="tel:+919359157231" className="text-white hover:text-[#2C78B7] transition-colors">
+                    +91 93591 57231
                   </a>
                 </div>
               </li>
@@ -128,11 +128,9 @@ const Footer = () => {
                 <Mail className="w-5 h-5 text-[#2C78B7] flex-shrink-0 mt-0.5" />
                 <div>
                   <p className="text-sm text-gray-400">Email</p>
-                  <a href="mailto:info@fin4capitalsolution.com" className="text-white hover:text-[#2C78B7] transition-colors text-sm">
-                    info@fin4capitalsolution.com
-                  </a>
-                  <a href="mailto:salman.khan@fin4capitalsolution.com" className="text-white hover:text-[#2C78B7] transition-colors text-sm block">
-                    salman.khan@fin4capitalsolution.com
+                  
+                  <a href="mailto:fin4capitalsolution@gmail.com" className="text-white hover:text-[#2C78B7] transition-colors text-sm block">
+                    fin4capitalsolution@gmail.com
                   </a>
                 </div>
               </li>

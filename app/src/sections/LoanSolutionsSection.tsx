@@ -5,18 +5,19 @@ import {
   Home, 
   Car,
   ArrowRight,
-  TrendingUp
+  TrendingUp,
+  User
 } from 'lucide-react';
 import useScrollAnimation from '../hooks/useScrollAnimation';
 
 const loanCategories = [
   {
-    icon: Briefcase,
-    title: 'Business Loans',
-    description: 'Custom repayment plans for startups and SMEs to fuel your business growth.',
-    color: 'from-blue-500 to-blue-600',
-    bgColor: 'bg-blue-50',
-    iconColor: 'text-blue-600',
+    icon: User,
+    title: 'Personal Loan',
+    description: 'Meet your personal financial needs with unsecured loans for travel, medical, or any purpose.',
+    color: 'from-emerald-500 to-emerald-600',
+    bgColor: 'bg-emerald-50',
+    iconColor: 'text-emerald-600',
   },
   {
     icon: Home,
@@ -27,12 +28,12 @@ const loanCategories = [
     iconColor: 'text-emerald-600',
   },
   {
-    icon: GraduationCap,
-    title: 'Education Loans',
-    description: 'Invest in your future with education loans covering all expenses.',
-    color: 'from-violet-500 to-violet-600',
-    bgColor: 'bg-violet-50',
-    iconColor: 'text-violet-600',
+    icon: Briefcase,
+    title: 'Business Loans',
+    description: 'Custom repayment plans for startups and SMEs to fuel your business growth.',
+    color: 'from-blue-500 to-blue-600',
+    bgColor: 'bg-blue-50',
+    iconColor: 'text-blue-600',
   },
   {
     icon: Car,

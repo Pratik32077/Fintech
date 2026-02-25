@@ -16,10 +16,10 @@ const HomePage = () => {
       <LoanSolutionsSection />
       <WhyChooseUsSection />
       <HowItWorksSection />
-      <EMICalculatorSection />
+      <PartnersSection />
       <TestimonialsSection />
       <ApplicationFormSection />
-      <PartnersSection />
+      
     </div>
   );
 };

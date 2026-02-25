@@ -49,14 +49,14 @@ const ContactPage = () => {
     {
       icon: Phone,
       title: 'Phone',
-      details: ['+91 82681 01093'],
-      href: 'tel:+918268101093',
+      details: ['+91 93591 57231'],
+      href: 'tel:+919359157231',
     },
     {
       icon: Mail,
       title: 'Email',
-      details: ['info@fin4capitalsolution.com', 'salman.khan@fin4capitalsolution.com'],
-      href: 'mailto:info@fin4capitalsolution.com',
+      details: [ 'fin4capitalsolution@gmail.com'],
+      href: 'mailto:fin4capitalsolution@gmail.com',
     },
     {
       icon: MapPin,
@@ -283,7 +283,7 @@ const ContactPage = () => {
                   Prefer to talk? Call us directly for immediate assistance.
                 </p>
                 <a
-                  href="tel:+918268101093"
+                  href="tel:+919359157231"
                   className="flex items-center gap-4 p-4 bg-white/10 backdrop-blur-sm rounded-xl hover:bg-white/20 transition-all duration-300 group"
                 >
                   <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
@@ -291,7 +291,7 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <p className="text-white/70 text-sm">Call us at</p>
-                    <p className="font-bold text-lg">+91 82681 01093</p>
+                    <p className="font-bold text-lg">+91 93591 57231</p>
                   </div>
                 </a>
               </div>
@@ -306,7 +306,7 @@ const ContactPage = () => {
                   {[
                     { icon: Facebook, href: 'https://www.facebook.com/?sk=welcome', label: 'Facebook' },
                     { icon: Twitter, href: 'https://x.com/salmankhanfin4?s=11', label: 'Twitter' },
-                    { icon: Linkedin, href: '#', label: 'LinkedIn' },
+                    { icon: Linkedin, href: 'https://www.linkedin.com/in/fin4-capital-solution-87115a3b3/', label: 'LinkedIn' },
                     { icon: Instagram, href: 'https://www.instagram.com/fin4capitalsolution', label: 'Instagram' },
                   ].map((social, idx) => (
                     <a
