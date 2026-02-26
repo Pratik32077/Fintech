@@ -42,7 +42,7 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <img 
-              src="/logo.jpeg" 
+              src="/fintech-logo.png" 
               alt="Fin4 Capital Solution" 
               className="h-12 lg:h-14 w-auto object-contain"
             />

@@ -30,7 +30,7 @@ const Footer = () => {
           <div>
             <div className="mb-6">
               <img 
-                src="/fintech.png" 
+               src="/fintech-logo.png" 
                 alt="Fin4 Capital Solution" 
                 className="h-16 w-auto object-contain bg-white rounded-xl p-2"
               />
