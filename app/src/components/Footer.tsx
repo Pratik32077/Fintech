@@ -59,7 +59,7 @@ const Footer = () => {
                 <Twitter className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/fin4-capital-solution-87115a3b3/"
                 className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center hover:bg-gradient-to-br hover:from-[#25477B] hover:to-[#2C78B7] transition-all duration-300"
                 aria-label="LinkedIn"
               >
