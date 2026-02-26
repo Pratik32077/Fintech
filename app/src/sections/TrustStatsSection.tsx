@@ -16,7 +16,7 @@ const stats = [
   },
   {
     icon: Banknote,
-    value: '₹500Cr+',
+    value: '₹50Cr+',
     label: 'Loans Disbursed',
     description: 'And growing',
   },

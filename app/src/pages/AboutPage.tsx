@@ -39,19 +39,19 @@ const coreValues = [
 const teamMembers = [
   {
     name: 'Salman Khan',
-    role: 'Partner',
+    role: 'CFO',
     description: '9+ Years Experience – HDFC Bank & Axis Bank – Business Loan Specialist',
     image: 'Salman.jpg',
   },
   {
     name: 'Amit Tiwari',
-    role: 'Partner',
+    role: 'FOUNDER & CEO',
     description: '8+ Years Experience HDFC Bank, ICICI Bank & Axis Finance – Business Loan & Secured Lending',
     image: 'Amit.jpeg',
   },
   {
     name: 'Shriniwas Maitri',
-    role: 'Partner',
+    role: 'MD',
     description: '10+ Years Experience Formerly – HDFC Bank (Business Loan Division)',
     image: 'Shriniwas Maitri.jpg',
   },
