@@ -14,6 +14,7 @@ import {
   ArrowRight
 } from 'lucide-react';
 import useScrollAnimation from '../hooks/useScrollAnimation';
+import { sendFormData } from '../lib/utils';
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -30,8 +31,14 @@ const ContactPage = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    const success = await sendFormData('https://formspree.io/f/xvzbyooz', formData);
+    if (!success) {
+      return;
+    }
+
     setIsSubmitted(true);
     setTimeout(() => {
       setIsSubmitted(false);
@@ -181,7 +188,12 @@ const ContactPage = () => {
                     </p>
                   </div>
                 ) : (
-                  <form onSubmit={handleSubmit} className="space-y-6">
+                  <form
+                    action="https://formspree.io/f/xvzbyooz"
+                    method="POST"
+                    onSubmit={handleSubmit}
+                    className="space-y-6"
+                  >
                     <div className="grid sm:grid-cols-2 gap-6">
                       <div>
                         <label className="block text-sm font-medium text-gray-700 mb-2">

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Send, CheckCircle, User, Mail, Phone, Briefcase, Sparkles, Clock, Shield, TrendingUp } from 'lucide-react';
 import useScrollAnimation from '../hooks/useScrollAnimation';
+import { sendFormData } from '../lib/utils';
 
 const services = [
   'Business Loan',
@@ -37,8 +38,16 @@ const ApplicationFormSection = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    // send the data to Formspree
+    const success = await sendFormData('https://formspree.io/f/xvzbyooz', formData);
+    if (!success) {
+      // you might want to show a toast or error state here
+      return;
+    }
+
     setIsSubmitted(true);
     setTimeout(() => {
       setIsSubmitted(false);
@@ -125,7 +134,12 @@ const ApplicationFormSection = () => {
                     </p>
                   </div>
 
-                  <form onSubmit={handleSubmit} className="space-y-5">
+                  <form
+                    action="https://formspree.io/f/xvzbyooz"
+                    method="POST"
+                    onSubmit={handleSubmit}
+                    className="space-y-5"
+                  >
                     <div>
                       <label className="flex items-center gap-2 text-sm font-medium text-gray-700 mb-2">
                         <User className="w-4 h-4 text-[#25477B]" />
